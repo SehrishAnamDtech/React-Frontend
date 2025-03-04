@@ -1,14 +1,18 @@
 import './App.css';
-import SimpleForm from './components/SimpleForm';
 import Header from './components/Header';
+import Hero from './components/Hero';
+import Works from './components/Works';
+
 function App() {
   return (
-    <div> 
+    <>
       <Header />
+      <Hero />
+      <Works/>
       <div>
         Dtech Systems
       </div>
-    </div>
+    </>
   );
 }
 

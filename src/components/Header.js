@@ -1,35 +1,89 @@
 function Header() {
     return (
-      <header className="navbar">
-        <div className="logo">
-            <img src="logo.png" alt="Dtech Logo" />
-            <span>dtech.</span>
-            <img src="vision-2030.png" alt="Vision 2030" />
-        </div>
+        <>
+		<Header id="header-top" className="header-top">
+			<ul>
+				<li>
+					<div className="header-top-left">
+						<ul>
+							<li className="select-opt">
+								<select name="language" id="language">
+									<option value="default">EN</option>
+									<option value="Bangla">BN</option>
+									<option value="Arabic">AB</option>
+								</select>
+							</li>
+							<li className="select-opt">
+								<select name="currency" id="currency">
+									<option value="usd">USD</option>
+									<option value="euro">Euro</option>
+									<option value="bdt">BDT</option>
+								</select>
+							</li>
+							<li className="select-opt">
+								<a href="#"><span className="lnr lnr-magnifier"></span></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li className="head-responsive-right pull-right">
+					<div className="header-top-right">
+						<ul>
+							<li className="header-top-contact">
+								+1 222 777 6565
+							</li>
+							<li className="header-top-contact">
+								<a href="#">sign in</a>
+							</li>
+							<li className="header-top-contact">
+								<a href="#">register</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+					
+		</Header>
+		
 
-        <nav>
-            <ul className="nav-links">
-                <li><a href="#">Home</a></li>
-                <li className="dropdown">
-                    <a href="#">Services ▼</a>
-                    <ul className="dropdown-menu">
-                        <li><a href="#">Service 1</a></li>
-                        <li><a href="#">Service 2</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">ClickUp Licensing</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
+		
+		<section className="top-area">
+			<div className="header-area">
+				
+			    <nav className="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
 
-        <a href="#" className="schedule-btn">
-            Schedule a Call <span className="arrow">→</span>
-        </a>
-      </header>
+			        <div className="container">
+
+			            
+			            <div className="navbar-header">
+			                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i className="fa fa-bars"></i>
+			                </button>
+			                <a className="navbar-brand" href="index.html">list<span>race</span></a>
+
+			            </div>
+			            
+
+			            
+			            <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                    <li className=" scroll active"><a href="#home">home</a></li>
+			                    <li className="scroll"><a href="#works">how it works</a></li>
+			                    <li className="scroll"><a href="#explore">explore</a></li>
+			                    <li className="scroll"><a href="#reviews">review</a></li>
+			                    <li className="scroll"><a href="#blog">blog</a></li>
+			                    <li className="scroll"><a href="#contact">contact</a></li>
+			                </ul>
+			            </div>
+			        </div>
+			    </nav>
+			    
+			</div>
+		    <div className="clearfix"></div>
+
+		</section>
+		</>
+
     );
   }
   
